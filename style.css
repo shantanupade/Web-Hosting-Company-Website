@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    --blue: #2fb1f5;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    height: auto;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+    font-size: 12px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+    gap: 30px;
+}
+
+nav ul li:nth-child(1){
+    font-weight: bold;
+}
+
+nav .logo img {
+    width: 100px;
+}
+
+nav .nav-btn {
+    padding: 10px 25px;
+    border: 2px solid;
+    color: var(--blue);
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    padding: #27e436 #0463ea;
+}
+
+/* body */
+
+/* hosting-section */
+.main-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 4rem;
+    height: 50vh;
+}
+
+.main-left h1 {
+    font-size: 40px;
+}
+
+.main-left p {
+    margin-top: 15px;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+/* global-btn-css */
+.main-section-btn {
+    margin-top: 20px;
+    color: #fff;
+    padding: 10px 18px;
+    background-image: linear-gradient(to bottom right, #13c4f8, #0463ea);
+    border: none;
+    font-size: 10px;
+    border-radius: 5px;
+    box-shadow:  #13c4f8, #0463ea;
+}
+
+.main-right img {
+    width: 400px;
+}
+
+/* quality-section */
+
+.quality-section {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    height: 80vh;
+}
+
+/* technical-section */
+.technical-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    height: 80vh;
+}
+
+/* services-section */
+.services-section {
+    margin-top: 10px;
+}
+
+.services-head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem 4rem;
+    height: 20vh;
+}
+
+.services-head p {
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.services-head h1 {
+    font-size: 40px;
+}
+
+.services-line-one,
+.services-line-two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 8rem;
+}
+
+.services-section p {
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.services-section h4 {
+    margin-top: 10px;
+}
+
+/* pricing section  */
+
+.price-section {
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #13c4f8, #0463ea);
+}
+
+.price-head {
+    padding: 50px;
+    text-align: center;
+    color: #fff;
+}
+
+.price-cards {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.price-cards .card {
+    background-color: #FFFFFF;
+    color: #14263f;
+    border-radius: 10px;
+    width: 300px;
+    padding-left: 35px;
+    overflow: hidden;
+    height: 440px;
+}
+
+.card .card-head h4 {
+    padding-top: 20px;
+    font-size: 17px;
+}
+
+.card-head p {
+    font-size: 10px;
+    line-height: 20px;
+    padding-top: 10px
+}
+
+.card .features ul {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.card .features li {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.features li p {
+    font-size: 10px;
+    line-height: 1px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.features ul li span {
+    font-size: 8px;
+    border: 1.5px solid #3edfb6;
+    border-radius: 50px;
+    padding: 0px 1.2px;
+    color: #3edfb6;
+}
+
+
+.card .price {
+    margin-top: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 45px;
+}
+
+.card .price h4 {
+    font-size: 20px;
+}
+
+.card .price p {
+    color: #82829b;
+    font-weight: bold;
+}
+
+.card .cancel-plan {
+    margin-left: 75px;
+    margin-top: 3px;
+    color: #82829b;
+    font-size: 8px;
+}
+
+.card .chose-plan {
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 10px 25px;
+    border: 1px solid;
+    color: var(--blue);
+    border-color: var(--blue);
+    background-color: #fff;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+#selected-head {
+    background-color: #2c2c2c;
+    color: #FFFFFF;
+    padding: 20px;
+    margin-top: -20px;
+    margin-left: -36px;
+    margin-right:-20px ;
+    padding-left: 35px;
+    z-index: -1;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#selected-features {
+    margin-top: -20px;
+}
+
+#selected-button {
+    color: #FFFFFF;
+    background-image: linear-gradient(to bottom right, #13c4f8, #0463ea);
+}
+
+
+/* Review-section */
+
+.review-section{
+    height: 610px;
+    width: 100%;
+}
+
+.review-section-wrapper{
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: radial-gradient(circle, rgb(233, 232, 232), #ffff);
+}
+
+
+.review-text {
+    font-size: 10px;
+    color: #82829b;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 15px;
+}
+
+.card-row-one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 10rem;
+    gap: 20px;
+}
+
+.card-row-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    text-align: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.card p {
+    font-size: 10px;
+    line-height: 20px;
+}
+
+.reviewer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 1rem;
+}
+
+.reviewer-info p {
+    padding-top: 5px;
+}
+
+/* register-section */
+.register-section {
+    background-image: url(./assets/images/footer-bg.svg);
+    height: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.register-section h1 {
+    font-size: 30px;
+    color: #fff;
+}
+
+.register-text p {
+    font-size: 10px;
+    color: #FFFFFF;
+    margin-top: 20px;
+    line-height: 15px;
+}
+
+.register-section .register-btn button{
+    padding: 10px 20px;
+    border: 1px solid;
+    border-color: #fff;
+    color: #ffff;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+/* footer-section */
+footer{
+    height: 220px;
+}
+
+footer .footer-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50PX;
+}
+
+footer .footer-wrapper ul{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+footer .footer-wrapper ul li{
+    font-size: 10px;
+    color: #82829b;
+}
+
+footer .footer-wrapper ul li:nth-child(1){
+    font-size: 15px;
+    color: #000000;
+}
+
+.footer-wrapper .social-section {
+    margin-bottom: 50px;
+}
+
+.footer-wrapper .social-section ul{
+    flex-direction: row;
+    margin-top: 15px;
+}
+    
+.footer-wrapper .overview-section ul{
+    margin-top: 15px;
+}
+
+.logo-section .footer-logo img{
+    width: 100px;
+}
+
+.logo-section .footer-logo-text p{
+    font-size: 10px;
+    color: #82829b;
+    margin-top: 20px;
+    line-height: 20px;
+}
+
