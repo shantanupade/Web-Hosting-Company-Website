@@ -1,4 +1,4 @@
-# Marketing-Company-Website
+# Web-Hosting-Company-Website
 
 ![Badge](https://img.shields.io/badge/Technologies-HTML%2FCSS-brightgreen)
 
